@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    background-color: navy;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.currencyContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.currencyContainer select{
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+.currencyContainer input{
+    font-size: 25px;
+    text-align: right;
+    border: none;
+    background: transparent;
+    color: white;
+}
+.currencyContainer span{
+    font-size: 25px;
+    color: white;
+}
+input:focus,
+select:focus{
+    outline: none;
+}
+/* input selecte focus olduğunda çıkan border ları kaldırdım */
+.exchangeRate{
+    font-weight: 600;
+}

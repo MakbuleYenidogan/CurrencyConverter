@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Döviz Uygulaması</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Döviz Çevirici</h1>
+        <div class="currencyContainer">
+            <select id="currencyFirst">
+                <option value="USD" selected>USD</option>
+                <option value="EUR">EUR</option>
+                <option value="AUD">AUD</option>
+                <option value="AUD">CAD</option>
+                <option value="JPY">JPY</option>
+            </select>
+            <input type="number" id="count" value="1" min="0">
+        </div>
+   
+    <!-- https://app.exchangerate-api.com/dashboard 
+    bu sitede standart response de dövir değerleri var ve bunları alıp value olarak veriyoruz 
+    projemizin bitmiş halinde sadece sayı değeri girebiliyoruz bu yüzde type="number" 
+    başlangıçtaki değri için value="1" veriyoruz 
+    min kaç olabilir 0 olabilir bu yüzden min="0" attr veriyorum-->
+
+<!-- iki değer olduğu için aynı divi kopyalıyoruz -->
+    <div class="currencyContainer">
+        <select id="currencySecond">
+            <option value="TRY"selected>TL</option>
+            <option value="EUR">EUR</option>
+            <option value="AUD">AUD</option>
+            <option value="AUD">CAD</option>
+            <option value="JPY">JPY</option>
+        </select>
+        <span id="equal">43</span>
+    </div>
+
+    <p class="exchangeRate" id="exchangeRate"></p>
+
+</div>
+<!-- selected İLE baştan seçili olmasını sağlıyoruz -->
+    
+<!-- GÜNCEL değeri alt kısmda verebilmek için p etiketlerini açtım -->
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
